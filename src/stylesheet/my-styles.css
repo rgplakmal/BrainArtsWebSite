@@ -1140,11 +1140,6 @@ body{
   cursor: pointer;
 }
 
-.footer-social-icons>div:hover a, .footer-social-icons>div:hover:active a, .footer-social-icons>div:active:hover a, .footer-social-icons>div:active a
-,.footer-social-icons>div:focus a{
-  color: #FFE500;
-}
-
 .footer-social-icons a{
   padding-top: 20px;
 }

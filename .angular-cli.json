@@ -21,7 +21,8 @@
       "styles": [
         "styles.css",
         "../src/stylesheet/my-styles.css",
-        "../src/stylesheet/bootstrap.min.css"
+        "../src/stylesheet/bootstrap.min.css",
+        "../node_modules/font-awesome/css/font-awesome.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.js"

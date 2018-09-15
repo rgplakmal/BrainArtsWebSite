@@ -287,3 +287,7 @@
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
 }*/
+
+main-panel-text :hover {
+  text-shadow: 2px 2px red;
+}

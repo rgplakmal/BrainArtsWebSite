@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'digital-marketing', component: MarketingComponent},
   { path: 'sw-development', component: SwDevComponent},
   { path: 'contact', component: ContactComponent},
-  { path: 'mobileDev', component: MobileDevComponent}
+  { path: 'mobileDev', component: MobileDevComponent},
   // { path: 'packages/:id', component: PackagesComponent },
   { path: '**', redirectTo: '/home' },
 

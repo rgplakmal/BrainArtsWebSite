@@ -32,15 +32,19 @@ export class HomeComponent implements OnInit {
   }
 
   gameDevButtonClick() {
-
+    this.router.navigateByUrl("/game-development");
   }
 
   digiMarketingButtonClick() {
-
+    this.router.navigateByUrl("/digital-marketing");
   }
 
   swDevButtonClick() {
+    this.router.navigateByUrl("/sw-development");
+  }
 
+  mobileDevButtonClick(){
+    this.router.navigateByUrl("/mobileDev");
   }
 
   //

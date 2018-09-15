@@ -17,6 +17,7 @@ import { GameDevComponent } from './views/game-dev/game-dev.component';
 import { MarketingComponent } from './views/marketing/marketing.component';
 import { SwDevComponent } from './views/sw-dev/sw-dev.component';
 import { ToolBarComponent } from './views/tool-bar/tool-bar.component';
+import { MobileDevComponent } from './views/mobile-dev/mobile-dev.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ToolBarComponent } from './views/tool-bar/tool-bar.component';
     GameDevComponent,
     MarketingComponent,
     SwDevComponent,
-    ToolBarComponent
+    ToolBarComponent,
+    MobileDevComponent
   ],
   imports: [
     BrowserModule,

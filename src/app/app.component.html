@@ -1,0 +1,93 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <app-tool-bar></app-tool-bar>
+</div>
+
+<div class="container-fluid">
+  <!--<div class="row">-->
+  <div>
+  <router-outlet></router-outlet>
+  </div>
+</div>
+
+
+<!--footer start-->
+
+<div class="col-sm-12">
+  <div class="row footer_top_wrp" style="margin-top: 40px;margin-bottom: 20px">
+    <div class="col-xs-10 col-xs-offset-1 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <a href="index.php" class="footer_logo">
+            <img alt="brain art logo" src="../../assets/images/toolbar/companyLogo.jpg" width="50" class="company-logo">
+            <span>
+            <button class="footer-heading solid seperator">
+              BrainArts International
+            </button> </span>
+          </a>
+
+          <div class="footer-link-alignment">
+            <a [routerLink]="['home']" class="text-uppercase foot_links">HOME</a>
+            <a [routerLink]="['ai-ml-dl']" class="text-uppercase foot_links">AI</a>
+            <a [routerLink]="['game-development']" class="text-uppercase foot_links">game-development</a>
+            <a [routerLink]="['digital-marketing']" class="text-uppercase foot_links">digital-marketing</a>
+            <a [routerLink]="['sw-development']" class="text-uppercase foot_links">sw-development</a>
+          </div>
+
+        </div>
+        <div class="col-md-2 col-sm-6 footer-divs">
+          <h4 class="footer-heading">Legal</h4>
+          <div class="footer-legal-alignment">
+            <a href="terms_of_use.php" class="foot_links">Terms of Use</a>
+            <a href="privacy_policy.php" class="foot_links">Privacy Policy</a>
+          </div>
+          <br>
+          <h4 class="footer-heading">Quick Links</h4>
+          <div class="footer-legal-alignment">
+            <a href="blog" class="foot_links">Blog</a>
+          </div>
+
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <h4 class="footer-heading footer-divs">About Us</h4>
+          <div class="footer-legal-alignment">
+            <a href="company.php" class="foot_links">Company</a>
+            <a [routerLink]="['contact']" class="foot_links">Contact Us</a>
+
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="footer-social-icons">
+            <h4 class="footer-heading footer-divs">Reach Us</h4>
+            <div class="facebook">
+              <a href="https://twitter.com/sistouroperator" target="_blank" class="socila_links"><span><i class="fab fa-facebook-f"></i></span></a>
+            </div>
+            <div class="youtube">
+              <a href="https://twitter.com/sistouroperator" target="_blank" class="socila_links"><span><i class="fab fa-youtube"></i></span></a>
+            </div>
+            <div class="behance">
+              <a href="https://twitter.com/sistouroperator" target="_blank" class="socila_links"><span><i class="fab fa-behance"></i></span></a>
+            </div>
+            <div class="instagram">
+              <a href="https://twitter.com/sistouroperator" target="_blank" class="socila_links"><span><i class="fab fa-instagram"></i></span></a>
+            </div>
+            <div class="linkedin-in">
+              <a href="https://twitter.com/sistouroperator" target="_blank" class="socila_links"><span><i class="fab fa-linkedin-in"></i></span></a>
+            </div>
+            <div class="google-plus">
+              <a href="https://twitter.com/sistouroperator" target="_blank" class="socila_links"><span><i class="fab fa-google-plus-g"></i></span></a>
+            </div>
+            <div class="pinterest">
+              <a href="https://twitter.com/sistouroperator" target="_blank" class="socila_links"><span><i class="fab fa-pinterest-p"></i></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer_bot_wrp text-center">
+    <div style="background-image: url('./assets/images/toolbar/footer-design.png')">Copyright © 2018 Brain Arts. All rights reserved.</div>
+  </div>
+</div>
+
+<!--footer end-->

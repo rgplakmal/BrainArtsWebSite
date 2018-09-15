@@ -1,0 +1,102 @@
+.footer-heading {
+  background: white;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  color:#545454 ;
+  font-family: AvenirNextLTPro, "Open Sans", serif;
+
+  margin: -8px 0 0 0;
+  position: relative;
+  top: -2px;
+  font-weight: 400;
+  padding: 0 0 0 10px;
+  text-transform: uppercase;
+}
+.footer-heading .solid{
+  border-left: solid 1px #afaeae;
+
+}
+
+.footer-heading:hover{
+  color: black;
+}
+
+.seperator{
+  border-left: solid 1px #afaeae;
+}
+
+.foot_links{
+  cursor: pointer;
+  display: block;
+  text-decoration: none !important;
+  font-weight: 300;
+  font-size: 12px;
+  padding-bottom: 8px;
+  color: #9c9c9c !important;
+  transition: color .3s ease-out;
+  -webkit-transition: color .3s ease-out;
+  -moz-transition: color .3s ease-out;
+}
+
+.footer-link-alignment{
+  margin-left: 15px;
+  margin-top: 10px;
+
+}
+
+.footer-legal-alignment{
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.footer-divs{
+  margin-top: 25px;
+}
+
+.socila_links{
+  color:#ffffff;
+}
+
+.footer-social-icons>div {
+  width: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #bababa;
+  line-height: 41px;
+  text-align: center;
+}
+
+.footer-social-icons>.facebook:hover {
+  background-color: #4966a0;
+}
+
+.footer-social-icons>.youtube:hover {
+  background-color: #da2723;
+}
+.footer-social-icons>.behance:hover{
+  background-color: #0b67ff;
+}
+.footer-social-icons>.instagram:hover{
+  background-color: #b333aa;
+}
+.footer-social-icons>.linkedin:hover{
+  background-color: #007bb6;
+}
+.footer-social-icons>.google-plus:hover{
+  background-color: #de4e43;
+}
+.footer-social-icons>.pinterest:hover{
+  background-color: #bd081b;
+}
+
+
+.footer_bot_wrp>div {
+  font-weight: 500;
+  font-size: 12px;
+  color: #f5e2e3;
+  padding: 15px 0;
+  background: no-repeat top center;
+  background-size: cover;
+  font-family: AvenirNextLTPro, "Open Sans", serif;
+}

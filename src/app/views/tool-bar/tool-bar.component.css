@@ -1,0 +1,43 @@
+.toolbar-spacer{
+  flex: 1 1 auto ;
+}
+.mainText {
+  size: 50px;
+}
+.example-icon {
+  padding: 0 14px;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.toolbar-class{
+  background-color: white;
+}
+
+.text-class {
+  color: #afaeae;
+}
+.company-logo{
+  width: 65px;
+  object-fit: contain;
+}
+.text-class :hover{
+  color: #777777;
+}
+.toolbar-button {
+  background: white;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  color:#afaeae ;
+  font-family: AvenirNextLTPro, "Open Sans", serif;
+}
+
+.toolbar-button:hover{
+  color: red;
+}
+
+.seperator{
+  border-left: solid 1px #afaeae;
+}
+

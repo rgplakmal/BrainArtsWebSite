@@ -40,15 +40,6 @@
 
 
 
-<!--<div class="contact-sections">-->
-<!--<h1>CONTACT US</h1>-->
-<!--<h4>CAN’T WAIT TO GET IN TOUCH WITH US?</h4>-->
-<!--</div>-->
-
-<!--<div class="clients" style="background-image: url('https://png.pngtree.com/thumb_back/fh260/back_pic/03/53/98/2157995d3895bd3.jpg')">ddd-->
-<!--</div>-->
-
-
 <div class="col-xs-12">
   <div class="contact-sections" style="background-image: url(https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/4030999/1160/661/m1/fpnw/wm0/nature_background_with_green_leaves_and_grass-.jpg?1519082029&s=59c130c436599da9a10797b63909acfd)">
     <div class="secondDiv">
@@ -59,3 +50,61 @@
     </div>
   </div>
 </div>
+
+<div class="container-fluid">
+  <div class="row contact-us-row">
+    <div class="col-md-12 no-padding-left-right">
+      <iframe src="https://maps.google.com/maps?q=Brainart%20International%20Pvt%20Ltd.&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+
+<div class="down-arrow-wrapper">
+  <div class="down-arrow">
+    <span>
+      <i class="fa fa-angle-double-down fa-3x"></i>
+    </span>
+  </div>
+</div>
+
+<div class="container">
+  <form (ngSubmit)="onSubmit()" #f="">
+    <h2 class="home-headings text-center" style="margin-bottom: 25px">Get in
+      <span class="home-headings-blue">Touch</span>
+    </h2>
+    <div class="col-md-4">
+      <div class="form-group">
+        <label class="sr-only" for="name">Your Name</label>
+        <input type="text" class="form-control custom-form-control" ngModel name="name" id="name" placeholder="Your Name" #name="" required>
+        <span class="error-message" *ngIf="!name.valid && name.touched || (f.submitted && !name.valid)">Please wnter your name here.</span>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <label class="sr-only" for="number">Your Phone Number</label>
+        <input type="text" class="form-control custom-form-control" id="number" pattern="[0-9]{10}" ngModel name="mobile" placeholder="Your Phone Number" #mobile="" required>
+        <span class="error-message" *ngIf="!mobile.valid && mobile.touched || (f.submitted && !mobile.valid)">Invalid Phone Number.</span>
+      </div>
+
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <label class="sr-only" for="email">Your Email</label>
+        <input type="email" class="form-control custom-form-control" id="email" ngModel name="email" email placeholder="Your Email" #email="" required>
+        <span class="error-message" *ngIf="!email.valid && email.touched || (f.submitted && !email.valid)">Invalid Email Address.</span>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div class="form-group">
+        <textarea class="form-control custom-form-control" rows="3" ngModel name="moreDetails" placeholder="More Details" maxlength="500" #moreDetails="" required></textarea>
+        <span class="error-message" *ngIf="!moreDetails.valid && moreDetails.touched || (f.submitted && !moreDetails.valid)">Please enter your message here.</span>
+      </div>
+    </div>
+
+    <div class="col-md-12 text-right">
+      <button class="btn btn-success green-button" type="submit">SUBMIT</button>
+    </div>
+  </form>
+</div>
+

@@ -1465,7 +1465,7 @@ body{
   padding: 50px;
 }
 
-bs-datepicker-container, bs-daterangepicker-container{
+.bs-datepicker-container, .bs-daterangepicker-container{
   z-index: 9999 !important;
 }
 
@@ -1477,4 +1477,3 @@ bs-datepicker-container, bs-daterangepicker-container{
   /*outline: 1px solid #c5c3c3;*/
   /*outline-offset: -8px;*/
 /*}*/
-

@@ -49,11 +49,35 @@
   margin-left: 10px;
   margin-top: 15px;
 }
+.foot_links.email{
+  margin-bottom: 3px;
+}
+.foot_links.phone{
+  margin-bottom: 3px;
+}
+.foot_links.company{
+  margin-bottom: -2px;
+}
+.foot_links.no{
+  margin-bottom: -2px;
+}
+.foot_links.address{
+  margin-bottom: -2px;
+}
 
 .footer-divs{
   margin-top: 25px;
 }
-
+.footer-divs.about-us{
+  margin-top: 17px;
+}
+.footer-divs.reach-us{
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.footer-divs.contact-us{
+  margin-top: 17px;
+}
 .socila_links{
   color:#ffffff;
 }

@@ -107,7 +107,7 @@ body{
 
 .down-arrow-wrapper{
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .select-form-group .ng-control{
@@ -358,8 +358,8 @@ body{
 /*home starts*/
 
 .home-slider-image{
-  height: 670px;
-
+  height: 400px;
+  width:100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -377,14 +377,17 @@ body{
 }
 
 .home-slider-row p:nth-child(1){
-  color: white;
+  color: orange;
   font-family: Fertigo Pro, sans-serif;
   position: absolute;
   /*font-size: calc(20px + 7vw);*/
-  font-size: 100px;
+  font-size: 80px;
   z-index: 1;
   border: 5px solid white;
   padding: 5px 40px;
+
+  /*background-color: red;*/
+  opacity: 0.7;
 
   left: 50%;
   top: 45%;
@@ -1342,7 +1345,7 @@ body{
 .contact-us-row iframe{
   /*margin-top: 29px;*/
 
-  margin-top: 59px;
+  margin-top: 40px;
 }
 
 .contact-us-middle{

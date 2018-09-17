@@ -18,6 +18,7 @@ import { MarketingComponent } from './views/marketing/marketing.component';
 import { SwDevComponent } from './views/sw-dev/sw-dev.component';
 import { ToolBarComponent } from './views/tool-bar/tool-bar.component';
 import { MobileDevComponent } from './views/mobile-dev/mobile-dev.component';
+import { AboutCompanyComponent } from './views/about-company/about-company.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { MobileDevComponent } from './views/mobile-dev/mobile-dev.component';
     MarketingComponent,
     SwDevComponent,
     ToolBarComponent,
-    MobileDevComponent
+    MobileDevComponent,
+    AboutCompanyComponent
   ],
   imports: [
     BrowserModule,

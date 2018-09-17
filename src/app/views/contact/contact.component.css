@@ -91,5 +91,15 @@
 .contact-sections h1{
   margin-top: 9vw;
   font-weight: 600;
-
 }
+
+.mapouter{
+  text-align:right;
+}
+.gmap_canvas {
+   overflow:hidden;
+   background:none!important;
+   height:500px;
+   width:1400px;
+  margin-left: -200px;
+ }

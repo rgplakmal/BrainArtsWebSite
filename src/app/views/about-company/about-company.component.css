@@ -1,0 +1,130 @@
+#slideshow {
+  margin: 50px auto;
+  position: relative;
+  width: 600px;
+  height: 600px;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+#slideshow > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+
+.modal-date-input .form-control[readonly]{
+  background-color: white;
+}
+
+
+.gray-bg {
+  background-color: #f5f5f5;
+}
+
+.bottom-spacing-medium {
+  padding-bottom: 70px;
+}
+
+.top-spacing-medium {
+  padding-top: 75px;
+}
+
+.content-section {
+  position: relative;
+}
+
+.white-bg {
+  background-color: white;
+}
+
+.bottom-spacing-small {
+  padding-bottom: 45px;
+}
+.top-spacing-small {
+  padding-top: 50px;
+}
+
+
+@media (min-width: 1200px){
+  .container {
+    width: 1170px;
+  }
+}
+@media (min-width: 992px){
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 768px){
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-8 {
+    width: 66.66666667%;
+  }
+}
+
+.container{
+  width:1100px;
+}
+.cTechnology{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.cTechnology h2 {
+  color: #ff5000;
+  margin-left: -100px;
+  margin-top: 30px;
+}
+h2 {
+  font-size: 2.2em;
+  font-weight: 300;
+  font-style: normal;
+  color: #404041;
+  line-height: 1.5em;
+}
+
+p {
+  color: #444444;
+  margin-left: -100px;
+  margin-top: 30px;
+  display: block;
+  font-size: 18px;
+}
+
+@media (min-width: 992px) {
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+}
+
+.team-members{
+  margin-bottom: 10px;
+  margin-right: 10px;
+  width: 280px;
+  height: 80px;
+  background-size: cover;
+}
+
+.cMainIcon{
+  margin-right: 0px;
+}
+.img1{
+  margin-left: -30px;
+}
+.img2{
+  margin-left: 120px;
+}
+
+p[_ngcontent-c3]{
+  margin-left: 0;
+}
+.cTechnology[_ngcontent-c3] h2[_ngcontent-c3]{
+  margin-left: 0;
+}

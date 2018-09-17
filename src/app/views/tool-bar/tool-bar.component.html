@@ -22,12 +22,14 @@
     <span>DREAM IT | WISH IT | DO IT</span>
     <span class="example-spacer"></span>
     <span>
-        <button class="toolbar-button" style="border-left:1px solid darkgray;border-right:1px solid darkgray">COMPANY</button>
+        <a [routerLink]="['aboutCompany']"><button class="toolbar-button" style="border-left:1px solid darkgray;border-right:1px solid darkgray">COMPANY</button></a>
       </span>
     <span>
-        <button class="toolbar-button">CONTACT</button></span>
+      <a [routerLink]="['contact']"> <button class="toolbar-button">CONTACT</button></a>
+    </span>
   </mat-toolbar-row>
 </mat-toolbar>
+
 
 
 

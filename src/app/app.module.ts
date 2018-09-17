@@ -22,6 +22,9 @@ import { AboutCompanyComponent } from './views/about-company/about-company.compo
 import {MailSendingService} from "./services/mail-sending.service";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
+import { MsgPopupService } from './services/msg-popup.service';
+import { Ng4LoadingSpinnerModule } from 'ng4-loading-spinner';
+import { NgSelectModule, NG_SELECT_DEFAULT_CONFIG } from "@ng-select/ng-select";
 
 
 @NgModule({
@@ -48,11 +51,20 @@ import {FormsModule} from "@angular/forms";
     FormsModule,
     MatIconModule,
     MatCardModule,
-    MatToolbarModule
+    MatToolbarModule,
+    Ng4LoadingSpinnerModule.forRoot(),
+    NgSelectModule
     // AngularFontAwesomeModule
   ],
   providers: [
-    MailSendingService
+    MailSendingService,
+    MsgPopupService,
+    {
+      provide: NG_SELECT_DEFAULT_CONFIG,
+      useValue: {
+        notFoundText: 'Custom not found'
+      }
+    }
   ],
   bootstrap: [AppComponent]
 })

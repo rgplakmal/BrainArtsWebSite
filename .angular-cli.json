@@ -22,10 +22,13 @@
         "styles.css",
         "../src/stylesheet/my-styles.css",
         "../src/stylesheet/bootstrap.min.css",
-        "../node_modules/font-awesome/css/font-awesome.css"
+        "../node_modules/font-awesome/css/font-awesome.css",
+        "../src/stylesheet/slick.css",
+        "../src/stylesheet/slick-theme.css"
       ],
       "scripts": [
-        "../node_modules/jquery/dist/jquery.js"
+        "../node_modules/jquery/dist/jquery.js",
+        "../src/javascript/slick.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

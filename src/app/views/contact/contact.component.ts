@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { NgForm } from '@angular/forms';
 
-// import { MsgPopupService } from '../../services/msg-popup.service';
+import { MsgPopupService } from '../../services/msg-popup.service';
 import { MailSendingService } from '../../services/mail-sending.service';
 
 @Component({
@@ -14,7 +14,7 @@ export class ContactComponent implements OnInit {
 
   @ViewChild('f') contactUsForm: NgForm
 
-  constructor( private mailSender: MailSendingService) { }
+  constructor( private msgPopup: MsgPopupService, private mailSender: MailSendingService) { }
 
   onSubmit() {
 
@@ -42,10 +42,10 @@ export class ContactComponent implements OnInit {
       });
 
     } else {
-      // this.msgPopup.broadcastMessagePopupEventEmitter({
-      //   type: 'error',
-      //   msg: "Please fill Valid Data"
-      // });
+      this.msgPopup.broadcastMessagePopupEventEmitter({
+        type: 'error',
+        msg: "Please fill Valid Data"
+      });
     }
   }
 

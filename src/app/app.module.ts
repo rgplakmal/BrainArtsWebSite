@@ -19,6 +19,9 @@ import { SwDevComponent } from './views/sw-dev/sw-dev.component';
 import { ToolBarComponent } from './views/tool-bar/tool-bar.component';
 import { MobileDevComponent } from './views/mobile-dev/mobile-dev.component';
 import { AboutCompanyComponent } from './views/about-company/about-company.component';
+import {MailSendingService} from "./services/mail-sending.service";
+import {HttpClientModule} from "@angular/common/http";
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -41,12 +44,16 @@ import { AboutCompanyComponent } from './views/about-company/about-company.compo
     BrowserAnimationsModule,
     MatMenuModule,
     MatButtonModule,
+    HttpClientModule,
+    FormsModule,
     MatIconModule,
     MatCardModule,
     MatToolbarModule
     // AngularFontAwesomeModule
   ],
-  providers: [],
+  providers: [
+    MailSendingService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

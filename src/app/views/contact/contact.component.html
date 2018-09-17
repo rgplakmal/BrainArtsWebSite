@@ -1,6 +1,5 @@
 <div class="paging-1" >
   <div class="main-img row">
-
     <div class="main-divs" style="background-image: url('./assets/images/home/9c496e431496f716d33259c68d353aefdc66160f.jpeg')">
       <div class="package-button transbox">
         <img class="main_icon" src="assets/images/home/cat.png" width="40" alt="cat1">
@@ -75,21 +74,21 @@
 </div>
 
 <div class="container">
-  <form (ngSubmit)="onSubmit()" #f="">
+  <form (ngSubmit)="onSubmit()" #f="ngForm">
     <h2 class="home-headings text-center" style="margin-bottom: 25px">Get in
       <span class="home-headings-blue">Touch</span>
     </h2>
     <div class="col-md-4">
       <div class="form-group">
         <label class="sr-only" for="name">Your Name</label>
-        <input type="text" class="form-control custom-form-control" ngModel name="name" id="name" placeholder="Your Name" #name="" required>
+        <input type="text" class="form-control custom-form-control" ngModel name="name" id="name" placeholder="Your Name" #name="ngModel" required>
         <span class="error-message" *ngIf="!name.valid && name.touched || (f.submitted && !name.valid)">Please wnter your name here.</span>
       </div>
     </div>
     <div class="col-md-4">
       <div class="form-group">
         <label class="sr-only" for="number">Your Phone Number</label>
-        <input type="text" class="form-control custom-form-control" id="number" pattern="[0-9]{10}" ngModel name="mobile" placeholder="Your Phone Number" #mobile="" required>
+        <input type="text" class="form-control custom-form-control" id="number" pattern="[0-9]{10}" ngModel name="mobile" placeholder="Your Phone Number" #mobile="ngModel" required>
         <span class="error-message" *ngIf="!mobile.valid && mobile.touched || (f.submitted && !mobile.valid)">Invalid Phone Number.</span>
       </div>
 
@@ -97,13 +96,13 @@
     <div class="col-md-4">
       <div class="form-group">
         <label class="sr-only" for="email">Your Email</label>
-        <input type="email" class="form-control custom-form-control" id="email" ngModel name="email" email placeholder="Your Email" #email="" required>
+        <input type="email" class="form-control custom-form-control" id="email" ngModel name="email" email placeholder="Your Email" #email="ngModel" required>
         <span class="error-message" *ngIf="!email.valid && email.touched || (f.submitted && !email.valid)">Invalid Email Address.</span>
       </div>
     </div>
     <div class="col-md-12">
       <div class="form-group">
-        <textarea class="form-control custom-form-control" rows="3" ngModel name="moreDetails" placeholder="More Details" maxlength="500" #moreDetails="" required></textarea>
+        <textarea class="form-control custom-form-control" rows="3" ngModel name="moreDetails" placeholder="More Details" maxlength="500" #moreDetails="ngModel" required></textarea>
         <span class="error-message" *ngIf="!moreDetails.valid && moreDetails.touched || (f.submitted && !moreDetails.valid)">Please enter your message here.</span>
       </div>
     </div>
@@ -113,4 +112,6 @@
     </div>
   </form>
 </div>
+
+
 

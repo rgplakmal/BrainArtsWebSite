@@ -79,7 +79,7 @@
 }
 .cTechnology h2 {
   color: #ff5000;
-  margin-left: -100px;
+  /*margin-left: -100px;*/
   margin-top: 30px;
 }
 h2 {
@@ -92,7 +92,7 @@ h2 {
 
 p {
   color: #444444;
-  margin-left: -100px;
+  /*margin-left: -100px;*/
   margin-top: 30px;
   display: block;
   font-size: 18px;
@@ -151,9 +151,17 @@ body {
 
 .one-slide,
 .testimonial,
+
 .message {
   border: none !important;
   outline: none !important;
+  color: black;
+  font-weight: 300;
+  font-family: Segoe Print;
+  font-size: 16px;
+}
+.client-name{
+  color: #4e555b;
 }
 
 .icon-overlay {
@@ -207,9 +215,17 @@ body {
     font-size: .7rem;
   }
   .testimonials .message {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
   .testimonials h2 {
     font-size: 1.5rem;
   }
 }
+
+.testimonial-image{
+  width: 100px;
+  height: 100px;
+  margin :10px 15px 10px 30px;
+  border-radius :50%
+}
+

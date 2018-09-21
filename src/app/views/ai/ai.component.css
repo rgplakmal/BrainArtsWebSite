@@ -7,3 +7,43 @@
     background-attachment: fixed;
     margin-top: 10px;
   }
+  .main-text-container {
+    /* width: 80%; */
+    /* align-content: center; */
+  }
+  .main-text {
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 0.1vh 0.1vh white;
+  }
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+  }
+  .card-style {
+    width: 30%;
+    height: 60vh;
+    background-color: black;
+    opacity: 0.5;
+    transition: transform .2s;
+  }
+  .card-container :hover {
+    transform: scale(1.05);
+  }
+  .card-text {
+    text-align: center;
+    font-size: large;
+    color:white;
+  }
+  .card-sub-text {
+    color: white;
+    font-size: medium;
+    text-align: center;
+  }
+  .card-style :hover{
+    text-shadow: 5% 5%;
+  }

@@ -1,0 +1,9 @@
+.bg{
+    height: 100vh;
+    width: 100%;
+    background: url('../../../assets/images/ai/background-ai.jpg') no-repeat center;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    margin-top: 10px;
+  }

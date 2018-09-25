@@ -34,7 +34,8 @@
 }
 
 .toolbar-button:hover{
-  color: red;
+  /*color: red;*/
+  color: black;
 }
 
 .seperator{

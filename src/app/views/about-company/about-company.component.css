@@ -139,93 +139,52 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-.testimonials {
-  overflow: hidden;
+
+
+#quote-carousel {
+  padding: 0 10px 30px 10px;
+  margin-top: 60px;
+}
+#quote-carousel .carousel-control {
+  background: none;
+  color: #CACACA;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+#quote-carousel .carousel-indicators {
   position: relative;
-  max-height: 300px;
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-top: 20px;
+  margin-right: -19px;
 }
-
-.testimonials {
-  background: #dddddd;
-}
-
-.one-slide,
-.testimonial,
-
-.message {
-  border: none !important;
-  outline: none !important;
-  color: black;
-  font-weight: 300;
-  font-family: Segoe Print;
-  font-size: 16px;
-}
-.client-name{
-  color: #4e555b;
-}
-
-.icon-overlay {
-  position: absolute;
-  opacity: 0.3;
-  right: 10%;
-  top: 0;
-  height: auto;
-  width: 100%;
-  max-width: 400px;
-}
-
-.carousel-controls .control {
-  position: absolute;
-  transform: translateY(-50%);
-  width: 45px;
-  height: 45px;
+#quote-carousel .carousel-indicators li {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  border: 2px solid #fff;
-  z-index: 1;
+  opacity: 0.4;
+  overflow: hidden;
+  transition: all .4s ease-in;
+  vertical-align: middle;
 }
-
-.prev {
-  left: -2.25rem;
+#quote-carousel .carousel-indicators .active {
+  width: 128px;
+  height: 128px;
+  opacity: 1;
+  transition: all .2s;
 }
-
-.next {
-  right: -2.25rem;
+.item blockquote {
+  border-left: none;
+  margin: 0;
 }
-
-@media screen and (max-width: 768px) {
-  .testimonials {
-    max-height: 700px;
-  }
-  .icon-overlay {
-    height: 300px;
-    top: calc(50% - 150px);
-  }
-  .carousel-controls .control {
-    width: 25px;
-    height: 25px;
-    top: inherit;
-  }
-  .prev {
-    left: 0;
-  }
-  .next {
-    right: 0;
-  }
-  .control i {
-    font-size: .7rem;
-  }
-  .testimonials .message {
-    font-size: 1.25rem;
-  }
-  .testimonials h2 {
-    font-size: 1.5rem;
-  }
+.item blockquote p:before {
+  content: "\f10d";
+  font-family: 'Fontawesome';
+  float: left;
+  margin-right: 10px;
 }
-
-.testimonial-image{
-  width: 100px;
-  height: 100px;
-  margin :10px 15px 10px 30px;
-  border-radius :50%
-}
-

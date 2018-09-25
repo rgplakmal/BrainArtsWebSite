@@ -1,35 +1,55 @@
-<!-- <mat-card color="">
-  <mat-card-title>
-    BrainArts International
-  </mat-card-title>
-  <mat-card-content>
-    <span class="mainText">BrainArts International</span>
-    <span>WISH IT | DREAM IT | DO IT</span>
-    <span class="toolbar-sapcer"></span>
-    <span>About</span>
-  </mat-card-content>
-</mat-card> -->
 
-<mat-toolbar class="toolbar-class">
-  <mat-toolbar-row class="text-class">
-      <span><button class="toolbar-button" (click)="getHome()">
+<!--<mat-toolbar class="toolbar-class">-->
+  <!--<mat-toolbar-row class="text-class">-->
+      <!--<span><button class="toolbar-button" (click)="getHome()">-->
+          <!--<img src="../../assets/images/toolbar/companyLogo.jpg" alt="" class="company-logo">-->
+      <!--</button></span>-->
+    <!--<span>-->
+        <!--<button class="toolbar-button seperator" (click)="getHome()">-->
+            <!--BrainArts International-->
+        <!--</button> </span>-->
+    <!--<span>DREAM IT | WISH IT | DO IT</span>-->
+    <!--<span class="example-spacer"></span>-->
+    <!--<span>-->
+        <!--<a [routerLink]="['aboutCompany']"><button class="toolbar-button" style="border-left:1px solid darkgray;border-right:1px solid darkgray">COMPANY</button></a>-->
+      <!--</span>-->
+    <!--<span>-->
+      <!--<a [routerLink]="['contact']"> <button class="toolbar-button">CONTACT</button></a>-->
+    <!--</span>-->
+  <!--</mat-toolbar-row>-->
+<!--</mat-toolbar>-->
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light margin">
+  <span><button class="toolbar-button" (click)="getHome()">
           <img src="../../assets/images/toolbar/companyLogo.jpg" alt="" class="company-logo">
       </button></span>
-    <span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">
+          <span>
         <button class="toolbar-button seperator" (click)="getHome()">
             BrainArts International
         </button> </span>
-    <span>DREAM IT | WISH IT | DO IT</span>
-    <span class="example-spacer"></span>
-    <span>
+          <span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">DREAM IT | WISH IT | DO IT</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <span>
         <a [routerLink]="['aboutCompany']"><button class="toolbar-button" style="border-left:1px solid darkgray;border-right:1px solid darkgray">COMPANY</button></a>
       </span>
-    <span>
+      <span>
       <a [routerLink]="['contact']"> <button class="toolbar-button">CONTACT</button></a>
     </span>
-  </mat-toolbar-row>
-</mat-toolbar>
-
-
-
-
+    </form>
+  </div>
+</nav>

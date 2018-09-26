@@ -11,5 +11,8 @@ export class MobileDevComponent implements OnInit {
 
   ngOnInit() {
   }
+  showApple(){
+    
+  }
 
 }

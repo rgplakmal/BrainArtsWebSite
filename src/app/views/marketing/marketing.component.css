@@ -7,3 +7,57 @@
     background-attachment: fixed;
     margin-top: 10px;
   }
+    .main-text {
+      font-size: large;
+      color: black;
+      text-align: center;
+      font-weight: bolder;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 1%;
+    }
+    .card-style {
+      width: 30%;
+      height: 70vh;
+      background-color: black;
+      opacity: 0.5;
+      transition: transform .2s;
+    }
+    .card-container :hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+    .card-text {
+      text-align: center;
+      font-size: large;
+      color:white;
+    }
+    .card-sub-text {
+      color: white;
+      font-size: medium;
+      text-align: center;
+    }
+    /* .card-style :hover{
+      text-shadow: 5% 5%;
+    } */
+    .ai-img {
+      height: 60%;
+      margin: auto;
+    }
+    .ml-img {
+      height: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      align-content: center;
+    }
+    .dl-img {
+      height: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      align-content: center;
+    }

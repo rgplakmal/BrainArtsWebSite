@@ -7,3 +7,32 @@
     background-attachment: fixed;
     margin-top: 10px;
   }
+.main-text-container{
+  align-content: center;
+  }
+.main-text {
+    font-size: large;
+    text-align: center;
+    color: white;
+  }
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+  }
+.card-style{
+  background-color: white;
+  height: 60vh;
+  width: 20%;
+  opacity: 0.3;
+  transition: transform .2s;
+}
+.card-container :hover {
+  transform: scale(1.01);
+}
+.card-main-text {
+  color: black;
+  font-size: large;
+}

@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+import { HostListener} from "@angular/core";
 
 // declare var jquery:any;
-// declare var $: any;
+declare var $: any;
 // declare var wow: any;
 
 
@@ -14,14 +15,10 @@ import { Router, NavigationEnd } from '@angular/router';
 export class HomeComponent implements OnInit {
 
   constructor ( private router: Router) {
-    // this.wowService.init();
   }
 
   ngOnInit() {
-    // new WOW().init();
-    // this.wowAnimationStart();
-
-// this.jqueryTest();
+    // this.aaaa();
   }
 
 
@@ -47,15 +44,27 @@ export class HomeComponent implements OnInit {
     this.router.navigateByUrl("/mobileDev");
   }
 
-  //
-  // jqueryTest()
-  // {
-  //   alert("jQuery test");
+
+  // @HostListener('window:scroll')
+  // onScroll(event) {
+  //   console.log(event);
+  //   if($(window).scrollTop() <= 1000){
+  //     $('.btn').addClass('animated bounce');
+  //   } else {
+  //     $('.btn').addClass('animated bounce');
+  //   }
   // }
 
-  // wowAnimationStart(){
-  //   $(document).ready(function(){
-  //     new WOW().init();
+
+  // aaaa(){
+  //   alert("ok");
+  //   $(window).scroll(function(){
+  //     if($(window).scrollTop() <= 1000){
+  //       $('.btn').addClass('animated bounce');
+  //     } else {
+  //       $('.btn').addClass('animated bounce');
+  //     }
   //   });
   // }
+
 }

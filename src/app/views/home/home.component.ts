@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    // this.aaaa();
+    this.home_animation();
   }
 
 
@@ -44,25 +44,68 @@ export class HomeComponent implements OnInit {
     this.router.navigateByUrl("/mobileDev");
   }
 
-  @HostListener('window:scroll')
-  // onScroll(event) {
+  // @HostListener('window:scroll')
+  //  onScroll() {
   //   if($(window).scrollTop() >= 1000){
-  //     $('.btn').addClass('animated wobble');
-  //     const element = document.querySelector("#packages");
-  //     element.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" });
+  //     $('.project-animation1').addClass('animated bounceInLeft');
+  //      const element = document.querySelector("#project-animation1");
+  //      element.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" });
   //   } else {
-  //     $('.btn').removeClass('animated wobble');
+  //     $('.project-animation1').removeClass('animated bounceInLeft');
   //   }
   // }
 
-  onScroll() {
-    if($(window).scrollTop() >= 1000){
-      $('.project-animation1').addClass('animated bounceInLeft');
-      const element = document.querySelector("#project-animation1");
-      element.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" });
-    } else {
-      $('.project-animation1').removeClass('animated bounceInLeft');
-    }
+  home_animation(){
+    $(window).scroll(function() {
+
+      // Main-divs Section Animation
+      var hT = $('#main-img').offset().top,
+        hH = $('#main-img').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+      console.log((hT-wH) , wS);
+      if (wS > (hT+hH-wH)){
+        $('.main-img').addClass('animated pulse');
+      }else {
+        $('.main-img').removeClass('animated pulse');
+      }
+
+      // Hello-User Section Animation
+      var hT = $('#hello_user').offset().top,
+        hH = $('#hello_user').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+      console.log((hT-wH) , wS);
+      if (wS > (hT+hH-wH)){
+        $('.hello_user').addClass('animated pulse');
+      }else {
+        $('.hello_user').removeClass('animated pulse');
+      }
+
+      // Client Section Animation
+      var hT = $('#clients').offset().top,
+        hH = $('#clients').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+      console.log((hT-wH) , wS);
+      if (wS > (hT+hH-wH)){
+        $('.clients').addClass('animated pulse');
+      }else {
+        $('.clients').removeClass('animated pulse');
+      }
+
+      // project1 Section Animation
+      var hT = $('#project-animation1').offset().top,
+        hH = $('#project-animation1').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+      console.log((hT-wH) , wS);
+      if (wS > (hT+hH-wH)){
+        $('.project-animation1').addClass('animated pulse');
+      }else {
+        $('.project-animation1').removeClass('animated pulse');
+      }
+    });
   }
 
 }

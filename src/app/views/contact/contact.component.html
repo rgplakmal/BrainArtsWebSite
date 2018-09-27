@@ -1,5 +1,5 @@
-<mat-card class="selector noshadow">
-<div class="paging-1" >
+<mat-card class="selector noshadow animated flipInX deleay-5s">
+<div class="paging-1 " >
   <div class=" row">
     <div class="col-sm main-divs" style="background-image: url('./assets/images/home/9c496e431496f716d33259c68d353aefdc66160f.jpeg')">
       <div class="package-button transbox">
@@ -44,8 +44,8 @@
   <div class="contact-sections" style="background-image: url(https://png.pngtree.com/thumb_back/fw800/back_pic/00/14/61/7856639324bb6f6.jpg)">
     <div class="secondDiv">
       <div class="companyLogo">
-        <h1>CONTACT US</h1>
-        <h4>CAN’T WAIT TO GET IN TOUCH WITH US?</h4>
+        <h1 class="animated bounceInRight delay-5s">CONTACT US</h1>
+        <h4 class="animated bounceInLeft delay-5s">CAN’T WAIT TO GET IN TOUCH WITH US?</h4>
       </div>
     </div>
   </div>
@@ -82,30 +82,30 @@
     </h2>
     <div class="col-md-4">
       <div class="form-group">
-        <label class="sr-only" for="name">Your Name</label>
+        <label class="text-class-heading" for="name">Your Name</label>
         <input type="text" class="form-control custom-form-control" ngModel name="name" id="name" placeholder="Your Name" #name="ngModel" required>
-        <span class="error-message" *ngIf="!name.valid && name.touched || (f.submitted && !name.valid)">Please wnter your name here.</span>
+        <span class="error-message" *ngIf="f.submitted && !name.valid">Please wnter your name here.</span>
       </div>
     </div>
     <div class="col-md-4">
       <div class="form-group">
-        <label class="sr-only" for="number">Your Phone Number</label>
-        <input type="text" class="form-control custom-form-control" id="number" pattern="[0-9]{10}" ngModel name="mobile" placeholder="Your Phone Number" #mobile="ngModel" required>
-        <span class="error-message" *ngIf="!mobile.valid && mobile.touched || (f.submitted && !mobile.valid)">Invalid Phone Number.</span>
+        <label class="text-class-heading" for="number">Your Phone Number</label>
+        <input type="number" class="form-control custom-form-control phone-no-field" id="number" pattern="[0-9]{10}" ngModel name="mobile" placeholder="Your Phone Number" #mobile="ngModel" required>
+        <span class="error-message" *ngIf="f.submitted && !mobile.valid">Invalid Phone Number.</span>
       </div>
 
     </div>
     <div class="col-md-4">
       <div class="form-group">
-        <label class="sr-only" for="email">Your Email</label>
+        <label class="text-class-heading" for="email">Your Email</label>
         <input type="email" class="form-control custom-form-control" id="email" ngModel name="email" email placeholder="Your Email" #email="ngModel" required>
-        <span class="error-message" *ngIf="!email.valid && email.touched || (f.submitted && !email.valid)">Invalid Email Address.</span>
+        <span class="error-message" *ngIf="f.submitted && !email.valid">Invalid Email Address.</span>
       </div>
     </div>
     <div class="col-md-12">
       <div class="form-group">
         <textarea class="form-control custom-form-control" rows="3" ngModel name="moreDetails" placeholder="More Details" maxlength="500" #moreDetails="ngModel" required></textarea>
-        <span class="error-message" *ngIf="!moreDetails.valid && moreDetails.touched || (f.submitted && !moreDetails.valid)">Please enter your message here.</span>
+        <span class="error-message" *ngIf="f.submitted && !moreDetails.valid">Please enter your message here.</span>
       </div>
     </div>
 

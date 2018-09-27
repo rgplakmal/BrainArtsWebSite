@@ -44,27 +44,25 @@ export class HomeComponent implements OnInit {
     this.router.navigateByUrl("/mobileDev");
   }
 
-
-  // @HostListener('window:scroll')
+  @HostListener('window:scroll')
   // onScroll(event) {
-  //   console.log(event);
-  //   if($(window).scrollTop() <= 1000){
-  //     $('.btn').addClass('animated bounce');
+  //   if($(window).scrollTop() >= 1000){
+  //     $('.btn').addClass('animated wobble');
+  //     const element = document.querySelector("#packages");
+  //     element.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" });
   //   } else {
-  //     $('.btn').addClass('animated bounce');
+  //     $('.btn').removeClass('animated wobble');
   //   }
   // }
 
-
-  // aaaa(){
-  //   alert("ok");
-  //   $(window).scroll(function(){
-  //     if($(window).scrollTop() <= 1000){
-  //       $('.btn').addClass('animated bounce');
-  //     } else {
-  //       $('.btn').addClass('animated bounce');
-  //     }
-  //   });
-  // }
+  onScroll() {
+    if($(window).scrollTop() >= 1000){
+      $('.project-animation1').addClass('animated bounceInLeft');
+      const element = document.querySelector("#project-animation1");
+      element.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" });
+    } else {
+      $('.project-animation1').removeClass('animated bounceInLeft');
+    }
+  }
 
 }

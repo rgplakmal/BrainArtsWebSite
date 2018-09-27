@@ -130,3 +130,16 @@
   padding-left: 0;
   padding-right: 0;
 }
+.text-class-heading{
+  font-size: large;
+  font-weight: bold;
+}
+.text-class-other {
+  font-size: medium;
+
+}
+.phone-no-field ::-webkit-inner-spin-button, 
+.phone-no-field ::-webkit-outer-spin-button {
+  -webkit-appearance: none; 
+  margin: 0; 
+} 

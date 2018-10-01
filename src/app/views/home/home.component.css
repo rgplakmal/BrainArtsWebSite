@@ -439,4 +439,5 @@ h2{
 
 .slide{
   border: groove;
-}
+  height: 22vh;
+  }

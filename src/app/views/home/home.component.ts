@@ -19,6 +19,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.home_animation();
+    this.clients_slider();
   }
 
 
@@ -105,6 +106,31 @@ export class HomeComponent implements OnInit {
       }else {
         $('.project-animation1').removeClass('animated pulse');
       }
+    });
+  }
+
+  clients_slider(){
+    $(document).ready(function(){
+      $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 4
+          }
+        }, {
+          breakpoint: 520,
+          settings: {
+            slidesToShow: 3
+          }
+        }]
+      });
     });
   }
 
